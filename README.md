@@ -6,4 +6,4 @@ A Web Development project using a MovieApi showcasing different entertainment co
 
 
 ## Project Demo
-[ENTERTAINMENT-App](https://shennyj.github.io/reactmovieapi/)
+[ENTERTAINMENT-App](https://shennyj.github.io/EntertainmentReactApi/)
