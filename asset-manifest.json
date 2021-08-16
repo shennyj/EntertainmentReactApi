@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/EntertainmentReactApi/static/css/main.ff4c20c6.chunk.css",
+    "main.js": "/EntertainmentReactApi/static/js/main.b75af9e7.chunk.js",
+    "main.js.map": "/EntertainmentReactApi/static/js/main.b75af9e7.chunk.js.map",
+    "runtime-main.js": "/EntertainmentReactApi/static/js/runtime-main.950eddd9.js",
+    "runtime-main.js.map": "/EntertainmentReactApi/static/js/runtime-main.950eddd9.js.map",
+    "static/js/2.803db658.chunk.js": "/EntertainmentReactApi/static/js/2.803db658.chunk.js",
+    "static/js/2.803db658.chunk.js.map": "/EntertainmentReactApi/static/js/2.803db658.chunk.js.map",
+    "index.html": "/EntertainmentReactApi/index.html",
+    "static/css/main.ff4c20c6.chunk.css.map": "/EntertainmentReactApi/static/css/main.ff4c20c6.chunk.css.map",
+    "static/js/2.803db658.chunk.js.LICENSE.txt": "/EntertainmentReactApi/static/js/2.803db658.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.950eddd9.js",
+    "static/js/2.803db658.chunk.js",
+    "static/css/main.ff4c20c6.chunk.css",
+    "static/js/main.b75af9e7.chunk.js"
+  ]
+}
