@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+.app{
+    min-height:100vh;
+    color:black;
+    padding-top:100px;
+    
+}
+body{
+    background-color: #9b59b6;
+    
+}
+.header{
+    
+    position:fixed;
+    z-index:100;
+    width:100%;
+    padding:15px;
+    font-size:1.2rem;
+    background-color:#8e44ad;
+    text-align:center;
+    text-transform:uppercase;
+    color:white;
+    box-shadow:0px 2px 5px 2px rgba(0,0,0,.75);
+}
+.loading{
+    font-size:4rem;
+    justify-content:center;
+    display:flex;
+}
+/* TRENDING */
+.trending{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding-bottom:50px;
+    
+}
+.media{
+    cursor:pointer;
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    padding:5px;
+    margin:5px 0;
+    border-radius:10px;
+    position:relative;
+    background-color: rgba(0,0,0,.2);
+    position:relative;
+    overflow:hidden;
+}
+.media:hover{
+    background-color:rgba(255,255,255,.8);
+    color:black;
+
+}
+.voteAverage{
+    padding:0 8px;
+    border-radius:50%;
+    background-Color:rgba(0,0,0,.5);
+}
+.movie-over{
+    background-color:#000;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    color:#fff;
+    padding:0 5px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    transform:translateY(100%);
+    transition:all 0.3s ease-in-out;
+    max-height:100%;
+    min-height:95%;
+}
+.movie-over p{
+    font-style:italic;
+}
+.media:hover .movie-over{
+    transform:translateY(0%)
+}
+.media:hover .title{
+    color:black;
+}
+.media:hover .mediaData{
+    color:#333;
+}
+.poster{
+    border-radius:10px;
+}
+.title{
+    text-align: center;
+    color:white;
+    font-size:20px;
+    padding:5px 0;
+}
+.mediaData{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:3px;
+    padding:0 2px;
+    color:rgb(200,200,200);
+    font-size:16px;
+}
+.pageTitle{
+    text-transform:uppercase;
+    justify-content: center;
+    display:flex;
+    border-radius:50px;
+    padding:5px;
+    font-size:1.5rem;
+    color:#ecf0f1;
+    margin-bottom:5px;
+}
+.paginationPage{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    margin-bottom:60px;
+}
+.paginationURL{
+    margin-bottom:100px;
+    text-align: center;
+}
+.paginationURL button{
+    margin:0 15px;
+    border-radius: 50px;
+    color: white;	
+	padding: 10px 25px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+    
+}
+.paginationURL button:hover{
+    cursor:pointer;
+}
+.paginationURL button:hover{
+    top: 1px;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+}
+.nextButton{
+	background-color: #6DA2D9;
+}
+.nextButton:hover{
+    background-color: #6292c3;
+}
+.prevButton{
+    background-color: #e74c3c;
+}
+.prevButton:hover{
+    background-color: #d04436;
+}
+
+/* GENRES */
+
+.genreDiv{
+    margin:20px 5px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.genre{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0px 5px;
+    margin:10px;
+    background-color: white;
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.8);
+    border-radius:20px;
+}
+.genre:hover{
+    cursor:pointer;
+    transform:scale(.97)
+}
+.genreName{
+    padding:5px;
+    margin:5px;
+    border-radius:10px;
+    border:none;
+    
+}
+
+/* SEARCH */
+.formDiv{
+    display:flex;
+    justify-content:space-around;
+    margin:15px 0;
+}
+.searchInput{
+    width:90%;
+    border:none;
+    padding:7px 15px;
+    color:white;
+    font-size:1rem;
+    background-color: #b07cc6;
+    box-shadow:0 1px 5px 1px rgba(0,0,0,.7);
+    border-radius:30px;
+}
+.searchInput::placeholder{
+    color:rgba(255,255,255,.8);
+}
+
+.searchIcon{
+    padding:7px 10px;
+
+}
+.searchIcon:hover{
+    cursor:pointer;
+    transform:scale(.97)
+}
+.tabsDiv{
+    display:flex;
+    justify-content:space-around;
+    margin:30px 0;
+    color:white;
+    font-size:1.2rem;
+}
+.tabsDiv span{
+    width:35%;
+    padding:10px 20px;
+    justify-content: center;
+    text-align: center;
+}
+.tabsDiv span:active{
+}
+.tabsDiv span:hover{
+    transform:scale(.98);
+    cursor:pointer;
+    box-shadow:0 4px 2px -2px rgba(0,0,0,0.1);
+}
+
+/* CONTENT MODAL */
+.contentLandscape{
+    object-fit:contain;
+    border-radius:10px;
+}
+.contentPortrait{
+    display:none;
+    border-radius:10px;
+    object-fit: contain;
+}
+.tagline{
+    padding-bottom:10px;
+    align-self:center;
+}
+.contentModal{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+    justify-content:space-between;
+    overflow-y:scroll;
+    scrollbar-width:none;
+    position:relative;
+}
+.closeModal{
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+    
+
+}
+
+.contentModalAbout{
+    padding:10px;
+    width:95%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    font-weight:300;
+
+}
+.contentModalTitle{
+    height:15%;
+    font-size:2rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.contentModalDescription{
+    display:flex;
+    height:40%;
+    overflow-y:scroll;
+    padding:15px;
+    border-radius:15px;
+    font-size:1.2rem;
+    scrollbar-width:thin;
+    box-shadow:0 0 3px rgba(0,0,0,0.8);
+    text-align:justify;
+}
+@media(min-width:835px){
+    .contentLandscape{
+        display:none;
+    }
+    .contentPortrait{
+        display:flex;
+        
+    }
+    .contentModal{
+       display:flex;
+       flex-direction: row;
+       justify-content:space-around;
+       padding:10px 0;
+    }
+    .contentModalAbout{
+        width:50%;
+        padding:0;
+        height:100%;
+    }
+    .contentModalTitle{
+        font-size:1.7rem;
+    }
+    .contentModalDescription{
+        font-size:1.3rem;
+    }
+}
+
